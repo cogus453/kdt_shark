@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'blog/css/signup.css' %}">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="login_image"><img src="{% static 'blog/images/signup_logo.png' %}"></div>
+    <div class="login_form">Sign up to Sharks</div>
+<div class="container">
+    <form action="{% url 'submit_registration' %}" id=signup_form method="post">
+        {% csrf_token %}
+
+        <label for="user_name">Username</label>
+        <input type="text" id="user_name" name="user_name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="user_pw">Password</label>
+        <input type="password" id="user_pw" name="user_pw" required>
+        
+        <label for="re_pw">Confirm Password</label>
+        <input type="password" id="re_pw" name="re_pw" required>
+
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+<script src="{% static 'blog/js/signup.js' %}"></script>
+</body>
+</html>

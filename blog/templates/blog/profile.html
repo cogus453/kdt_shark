@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SHARKS Profile</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'blog/assets/css/profile_main.css'%}">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="{% static 'blog/css/blog_view.css' %}">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="{%static 'blog/images/shark_profile.jpg'%}" alt="" /></a>
+					<h1><strong>이름(닉네임)</strong> <br /><br />
+					추가정보
+				</div>
+			</header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#">SHARKS</a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/index">Home</a>
+					  </li>
+					</div>
+				</div>
+			</nav>
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>소제목</h2>
+						</header>
+						<p> 간단설명</p>
+						<ul class="actions">
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>작성한 게시글</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/shark_post_edit.jpg" class="image fit thumb"><img src="{%static 'blog/images/shark_post_edit.jpg'%}" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/shark_post_edit.jpg" class="image fit thumb"><img src="{%static 'blog/images/shark_post_edit.jpg'%}" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/shark_post_edit.jpg" class="image fit thumb"><img src="{%static 'blog/images/shark_post_edit.jpg'%}" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/shark_post_edit.jpg" class="image fit thumb"><img src="{%static 'blog/images/shark_post_edit.jpg'%}" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/shark_post_edit.jpg" class="image fit thumb"><img src="{%static 'blog/images/shark_post_edit.jpg'%}" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/shark_post_edit.jpg" class="image fit thumb"><img src="{%static 'blog/images/shark_post_edit.jpg'%}" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+						</div>
+						<!-- <ul class="actions">
+							<li><a href="#" class="button">123456</a></li>
+						</ul> -->
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js'%}"></script>
+			<script src="{% static 'assets/js/jquery.poptrox.min.js'%}"></script>
+			<script src="{% static 'assets/js/browser.min.js'%}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'assets/js/util.js'%}"></script>
+			<script src="{% static 'assets/js/main.js'%}"></script>
+
+	</body>
+</html>

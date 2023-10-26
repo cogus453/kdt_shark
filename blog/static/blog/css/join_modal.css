@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    padding: 20px 40px;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 15px; /* 라운드 처리 추가 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.show .modal-content {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content h2 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    margin-bottom: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal-content input[type="submit"] {
+    display: inline-block; 
+    width: 100%;
+    height: 50px;
+    line-height: 40px; 
+    padding: 0 15px; 
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+
+.modal-content input[type="submit"]:hover {
+    background-color: #646464;
+}
